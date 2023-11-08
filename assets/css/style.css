@@ -1,0 +1,402 @@
+/* DESKTOP VERSION */
+
+*{
+    font-family:'Courier New', Courier, monospace;
+    background-color: yellow;
+
+
+    --color:  white;
+    --border-left: red;
+    --margin-left-big: 0px;
+    --margin-left-work: 0px;
+    --margin-left-sm: 10px;
+    --margin-bottom: 40px;
+    --margin-left-box: 10%;
+    --margin-left-box-work: 11.5%;
+    --color-media-query: black;
+    --border-left-media-query: green;
+}
+
+
+a:link, a:visited
+    {
+    color: #CF5C3F;
+    }
+
+
+body {
+     /*background-image: url('../Logos/TabBack.jpg');    
+     */
+     background-color:  yellow;
+     color: blue;
+     font-size: 95%;
+     font-family: Arial, 'Lucida Sans Unicode';
+     font-weight: bold;
+     line-height: 1.5;
+     text-align: left;
+    }
+   
+a:hover, a:active
+    {
+    background-color: #CF5C3F;
+    color: blue;
+    }
+
+#title-me {
+    color: blue;
+}
+/* --------------------------------------------------------- left-box */    
+#left-box {
+    display:left;
+    align-items:left;
+    flex-direction: column;
+    width: var(--margin-left-box);
+    color: red;
+}
+#left-box-work {
+    display:left;
+    align-items:left;
+    flex-direction: column;
+    width: var(--margin-left-box-work);
+    color: red;
+}
+   
+   
+/*-------------------------------------------------------------------------- */
+/*---------------------------------------------------------- DESKTOP VERSION */
+
+
+.introduction {
+    display: flex;
+    flex-direction: row;
+    font-size:medium;
+    background-color:red;
+    color:var(--color);
+    justify-content: space-between;
+    margin-right: 10%;
+    width: 100%;
+}
+
+
+#title-me {
+    margin-left: 8px;
+}
+
+
+#profile-picture {
+    align-items:center;
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------- sections about-me */  
+    /*
+    sections:
+    about-me-container
+        about-me-right
+            about-me-right-margin
+    */  
+
+
+/* --------------------------------------------------------- about-me */    
+#about-me-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;    
+    margin-bottom: var(--margin-bottom);
+}
+
+
+#about-me-right {
+    border-left: var(--border-left) 8px solid;
+    display:flex;
+    flex-direction: row;
+    margin-left: var(--margin-left-big);
+    flex-wrap: wrap;
+    color: var(--blue);
+    width: 600px;
+   
+}
+
+
+#about-me-right-margin {
+        margin-left: 35px;    
+    }
+
+
+
+
+/* --------------------------------------------------------- all-work-container */
+#all-work-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;    
+    margin-bottom: var(--margin-bottom);    
+}
+
+
+#all-work-container :first-child img {
+    width: 100%;
+    height: 250px;
+   
+}
+    /* --------------------------------------
+    all-work-container
+        left-box-work   all-work-right
+                            main-project-box                    
+                                main-project
+                            other-projects
+                                box
+    --------------------------------------*/
+
+
+#all-work-right {
+    border-left: var(--border-left) 8px solid;
+    display:flex;
+    flex-direction: row;
+    margin-left: var(--margin-left-work);      
+    flex-wrap: wrap;
+    width:95%;
+}  
+
+
+#other-projects {
+    /*width: 450px;*/
+    display: flex;
+    flex-direction:row;
+}
+
+
+
+
+/* --------------------------------------------------------- main-project-box*/
+#main-project-box {
+    /*width: 600px;*/
+    width:100%;
+}
+
+
+#main-project-box img{
+    /*width: 600px;*/  
+    height: 270px;
+}
+
+
+
+
+
+
+
+
+
+
+.box {
+    /*width: 600px;*/
+    height: 300px;
+    width:100%;
+}
+.box_resume {
+    /*width: 600px;*/
+    height: 430px;
+    width:100%;
+}
+
+
+.leftbox {
+    /*width: 600px;*/
+    height: 300px;
+    width:120px;
+}
+
+
+
+
+.caption {
+    color: var(--blue);
+}
+
+
+/* --------------------------------------------------------- resume */  
+#resume-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;    
+    margin-bottom: 80px;
+}
+#resume-right {
+    border-left: var(--border-left) 8px solid;
+    display:flex;
+    flex-direction: row;
+    margin-left: var(--margin-left-big);    
+    flex-wrap: wrap;
+    color: var(--blue);
+    width: 400px;
+}
+
+
+/*---------------------------------------- contact-me */
+
+
+#contact-me-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: var(--margin-bottom);    
+}
+#contact-me-right {
+    border-left: var(--border-left) 8px solid;
+    display:flex;
+    flex-direction: row;
+    margin-left: var(--margin-left-big);    
+    color: var(--blue);
+    width: 400px;
+}
+
+
+
+
+
+
+/*-------------------------------------------------------*/
+/*---------------------------------------- MOBILE VERSION*/
+
+
+@media screen and (max-width: 768px) {
+    #profile-picture {
+        align-items:center;
+        width:100px;
+        height:100px;
+    }
+
+
+    .introduction {
+        display: flex;
+        flex-direction: column;
+        font-size:medium;
+        background-color:blue;
+        color:var(--color);
+        justify-content: space-between;
+        margin-right: 6%;      
+        width: 100%;
+    }
+   
+    .box {
+        width: 100%;
+        height: auto;      
+    }
+    .box_resume {
+    /*width: 600px;*/
+    height: auto;
+    width:100%;
+    }
+   
+    /*---------------------------------------- about-me */
+    #about-me-container{
+    flex-direction: column;
+    margin-bottom: 15px;
+    }
+   
+    #about-me-right {
+        border-left: var(--border-left-media-query) 5px solid;
+        display:flex;
+        flex-direction: column;
+        margin-left: var(--margin-left-sm);
+        width: 90%;
+        /*color: var(--color-media-query);*/
+       
+    }
+   
+
+
+    /*---------------------------------------- work-container */
+    #all-work-container{
+    flex-direction: column;
+    margin-bottom: var(--margin-bottom);    
+    }
+    #all-work-container :first-child img {
+        width: 100%;
+        height: 40px;
+       
+    }  
+   
+    /* --------------------------------------
+    all-work-container
+        left-box-work   all-work-right
+                            main-project-box                    
+                                main-project
+                            other-projects
+                                box
+    --------------------------------------*/
+       
+    #all-work-right {
+        border-left: var(--border-left-media-query) 5px solid;
+        display:flex;
+        flex-direction: column;
+        margin-left: var(--margin-left-sm);
+        width: 95%;
+    }  
+       
+    /* --------------------------------------------------------- main-project-box*/
+    #main-project-box {
+        /*width: 600px;*/
+        width:90%;
+    }
+
+
+
+
+   
+    #other-projects {
+        height: 190px;
+        max-width: 100%;
+    }
+    /*---------------------------------------- resume */
+    #resume-container {
+    flex-direction: column;
+    margin-bottom: 1px;
+    }
+    #resume-right {
+        border-left: var(--border-left-media-query) 5px solid;
+        display:flex;
+        flex-direction: column;
+        margin-left: var(--margin-left-sm);
+        margin-top: 10px;        
+    }
+    #resume-right :first-child img {
+        width: 100%;
+        height: auto;
+        max-width: 90%;
+    }
+
+
+    /*---------------------------------------- contact-me-me */
+    #contact-me-container {
+    flex-direction: column;
+    }
+    #contact-me-right {
+        border-left: var(--border-left-media-query) 5px solid;
+        display:flex;
+        margin-left: var(--margin-left-sm);
+        margin-top: 10px;
+        width: 400px;
+       
+    }
+   
+    /* --------------------------------------------------------- left-box */    
+    #left-box {
+        color: orange;
+    }
+    /* --------------------------------------------------------- left-box */    
+    #left-box-work {
+        color: orange;
+    }
+   
+}
