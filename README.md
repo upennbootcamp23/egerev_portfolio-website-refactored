@@ -24,7 +24,9 @@ This website contains my portfolio, in which I share facts about me, my work, my
 No installation was required during the making of this website.
 
 ## Usage
+This is the same portfolio as in Week 2, with one update: I have 4 projects (3 Module Challenges and the Project 1 assignment). 
 
+Also, I have "One Piece"-ified the website - the desktop version is yellow and red (Luffy's colors), and then the mobile version has yellow, blue, and green (Zoro and Sanji's colors). 
 
 --------------------------------------------------------------------------------------------OCTOBER 1, 2023
 This website contains my portfolio, in which I share facts about me, my work, my resume, and the best way(s) to contact me.
@@ -55,5 +57,5 @@ However, I had help from multiple sources in order to make the website as it is 
 Please refer to the LICENSE in the repo.
 
 ## Deployment
-Link to website: https://upennbootcamp23.github.io/egerev_portfolio-website/
+Link to website: https://upennbootcamp23.github.io/egerev_portfolio-website-refactored/
 
